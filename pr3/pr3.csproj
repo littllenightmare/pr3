@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\pr2gh\LibMas\LibMas.csproj" />
+    <ProjectReference Include="..\..\pr2\LibMas\LibMas.csproj" />
     <ProjectReference Include="..\Lib_13_3\Lib_13_3\Lib_13_3.csproj" />
   </ItemGroup>
 
