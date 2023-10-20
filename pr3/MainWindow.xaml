@@ -32,5 +32,7 @@
         <Button x:Name="Exitbtn" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Grid.Column="1" Width="120" Height="30" Content="Выход" Click="ExitCLick"/>
         <Button x:Name="Createbtn" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Top" Width="120" Height="30" Content="Создать" Click="CreateClick"/>
         <Button x:Name="Delete" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1" Width="120" Height="30" Content="Очистить" Click="DeleteCLick"/>
+        <Button x:Name="Save" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" Height="30" Content="Сохранить" Click="SaveClick" Grid.Column="2" Margin="0,105,0,0"/>
+        <Button x:Name="Open" IsEnabled="False" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" Height="30" Content="Открыть" Click="OpenClick" Grid.Column="2" Margin="0,42,0,0"/>
     </Grid>
 </Window>

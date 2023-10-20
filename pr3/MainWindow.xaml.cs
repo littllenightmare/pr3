@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Lib_13_3;
+using LibMas;
 
 namespace pr3
 {
@@ -77,6 +78,21 @@ namespace pr3
                 int ColumnIndex = e.Column.DisplayIndex;//определяем номер столбца
                 matr[RowIndex, ColumnIndex] = Convert.ToInt32(((TextBox)e.EditingElement).Text);//заносим ответ в матрицу
             }
+        }
+
+        private void SaveClick(object sender, RoutedEventArgs e)
+        {
+            if (datagrid.ItemsSource != null)
+            {
+                Massiv.SaveMatr(matr);
+                Open.IsEnabled = true;
+            }
+        }
+
+        private void OpenClick(object sender, RoutedEventArgs e)
+        {
+            Massiv.OpenMatr(out matr);
+            datagrid.ItemsSource = VisualArray.ToDataTable(matr).DefaultView;
         }
     }
 }

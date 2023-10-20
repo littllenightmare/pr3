@@ -8,9 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="Lib_13_3">
-      <HintPath>..\Lib_13_3\Lib_13_3\bin\Debug\net6.0\Lib_13_3.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\pr2gh\LibMas\LibMas.csproj" />
+    <ProjectReference Include="..\Lib_13_3\Lib_13_3\Lib_13_3.csproj" />
   </ItemGroup>
 
 </Project>
